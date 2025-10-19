@@ -10,6 +10,7 @@
 //lazy header gen, i use PUBLIC as an attribute to determine what to emit
 // #define PUBLIC __attribute__((annotate(\"header_export\")))
 // not feature complete prob not safe, just made it to use rq, might revisit later
+// TODO: rewrite this entire thing to use libclang LOL
 
 char *xstrdup(const char *str) {
     size_t n = strlen(str) + 1;
